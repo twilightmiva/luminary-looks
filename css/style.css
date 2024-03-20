@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.spa-container{
+    /* width: 50%; */
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -21,10 +24,12 @@ nav ul li{
     font-size: 1.2rem;
 }
 nav button{
-    padding: 1rem;
+    padding: 1rem 4rem;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     border: none;
+    color: rgb(94, 54, 1);
+    margin-right: 2rem;
 }
 hero{
     display: flex;
@@ -57,6 +62,7 @@ hero img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .save{
     background:linear-gradient(
@@ -71,12 +77,87 @@ hero img{
       color: white;
       font-size: 5rem;
 }
+.works-images img{
+    width: 200px;
+    height:200px;
+    border-radius: 80px;
+}
+.latestspas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #c89116;
+    
+
+}
+.latestspas button{
+    padding: 1rem;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    background-color: #c89116;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0;
+}
+.latest{
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    gap: 300px;
+}
+.massage {
+display: flex;
+flex-direction:column ;
+align-items: center;
+padding-top: 2rem;
+/* color: white; */
+}
+.massage img{
+    width: 250px;
+    height:250px;
+    border-radius:50% ;
+    
+}
+.beauty{
+    display: flex;
+flex-direction:column ;
+align-items: center;
+padding-top: 2rem;
+
+/* color:white; */
+
+}
+.beauty img{
+    width: 250px;
+    height:250px;
+    border-radius:50% ;
+}
+.hair{
+    display: flex;
+flex-direction:column ;
+align-items: center;
+padding-top: 2rem;
+
+/* color: white; */
+
+}
+.hair img{
+    width: 250px;
+    height:250px;
+    border-radius:50% ;
+}
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(90deg,#c89116,#000000);
 
+}
+footer .socials{
+    display: flex;
+gap: 4rem;
 }
 footer h3{
     color: white;
