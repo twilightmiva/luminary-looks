@@ -9,12 +9,11 @@ console.log(error);
 registerButton.addEventListener("click", function (e) {
   e.preventDefault();
   const user = {};
-  
+  let users = [];
   inputs.forEach((input) => {
     if (input.value === "") {
       error.textContent = "Kindly fill all the fields";
       input.style.border = "2px solid red";
-      return
     } else if (
       document.querySelector("[name=password]").value !==
       document.querySelector("[name=confirm]").value
@@ -22,17 +21,38 @@ registerButton.addEventListener("click", function (e) {
       error.textContent = "Passwords don't match";
       document.querySelector("[name=password]").style.border = "2px solid red";
       document.querySelector("[name=confirm]").style.border = "2px solid red";
-      return
     } else {
-      if (input.name !== "confirm" && input.name!=="checkbox") {
+      input.style.border = "none";
+
+      if (input.name !== "confirm" && input.name !== "checkbox") {
+        error.textContent = "";
         user[`${input.name}`] = input.value;
+
       }
+
+      if(document.querySelector("[name=checkbox]").checked){
+        user["spa_owner"] = true
+      }
+
     }
   });
 
-//   Add user to Local Storage
+  console.log(error);
 
+  //   Add user to Local Storage
+  if (error.textContent === "") {
+    if (localStorage.getItem("users") === null) {
+      users.push(user);
+      localStorage.setItem("users", JSON.stringify(users));
+    } else {
+      users = JSON.parse(localStorage.getItem("users"));
+      users.push(user);
+      localStorage.setItem("users", JSON.stringify(users));
+    }
 
+    location.replace("http://127.0.0.1:5500/login.html")
+
+  }
 
   console.log(user);
 });
