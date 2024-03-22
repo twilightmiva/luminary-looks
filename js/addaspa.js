@@ -46,8 +46,12 @@ addBtn.addEventListener("click", function (e) {
       spas.push(spa);
       localStorage.setItem("spas", JSON.stringify(spas));
     }
-
-    // location.href = "http://127.0.0.1:5500/allspas.html";
+    
+    
+    
+    // adderror.textContent === "Added successfully"
+    
+    location.href =`${window.location.origin}/allspas.html`;
   }
 
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));

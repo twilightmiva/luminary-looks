@@ -31,7 +31,7 @@ enterButton.addEventListener("click", function (e) {
         user.password === userItem.password
       ) {
         localStorage.setItem("currentUser",JSON.stringify(userItem))
-         location.href = "http://127.0.0:5500";
+         location.href =`${window.location.origin}/index.html`;
       } else {
         loginError.textContent = "Wrong Credentials";
       }

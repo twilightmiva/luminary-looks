@@ -49,7 +49,7 @@ registerButton.addEventListener("click", function (e) {
       localStorage.setItem("users", JSON.stringify(users));
     }
 
-    location.href = "http://127.0.0.1:5500/login.html"
+    location.href = `${window.location.origin}/login.html`;
 
   }
 
