@@ -41,7 +41,7 @@ hero{
     background: linear-gradient(
         rgba(45.9%,33.3%,5.1%,0.4),
         rgba(45.9%,33.3%,5.1%,0.4)
-      ),url(/images/hero1.jpg) no-repeat top left/cover ;
+      ),url("https://twilightmiva.github.io/luminary-looks/images/hero1.jpg") no-repeat top left/cover ;
     height: 65vh;
 
     
@@ -68,7 +68,7 @@ hero img{
     background:linear-gradient(
         rgba(45.9%,33.3%,5.1%,0.4),
         rgba(45.9%,33.3%,5.1%,0.4)
-      ),url(/images/save.jpg) no-repeat top left/cover;
+      ),url("https://twilightmiva.github.io/luminary-looks/images/save.jpg") no-repeat top left/cover;
       height: 40vh;
       display: flex;
       flex-direction: column;
