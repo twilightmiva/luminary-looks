@@ -41,3 +41,53 @@
 .links ul li{
     list-style-type: none;
 }
+.active{
+    color: #74490a;
+    border-bottom: 3px solid #5f4012;
+}
+
+.book-now{
+    background-image: linear-gradient(90deg,#c89116,#000000);
+    padding: 4em;
+    /* width: 50%; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.bookingerror{
+    color:red;
+}
+.book-now-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.book-now button{
+    padding: 1rem 4rem;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: none;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+}
+
+input{
+    padding: 1rem 2rem;
+    width: 100%;
+}

@@ -2,8 +2,7 @@ const inputs = document.querySelectorAll("input");
 console.log(inputs);
 const registerButton = document.querySelector(".registerButton");
 console.log(registerButton);
-const logInInput = document.querySelectorAll(".input");
-console.log(logInInput);
+
 const error = document.querySelector(".error");
 console.log(error);
 registerButton.addEventListener("click", function (e) {
@@ -50,14 +49,11 @@ registerButton.addEventListener("click", function (e) {
       localStorage.setItem("users", JSON.stringify(users));
     }
 
-    location.replace("http://127.0.0.1:5500/login.html")
+    location.href = "http://127.0.0.1:5500/login.html"
 
   }
 
   console.log(user);
 });
 
-logInInput.addEventListener("click", function (e) {
-  e.preventDefault();
-  logInInput.forEach((input) => {});
-});
+

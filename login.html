@@ -13,17 +13,19 @@
         <a href="/index.html"><img src="/images/1.png" width="120px" /></a>
 
         <div>
-         <a href="/register.html"> <button>Register</button></a>
-          <a href="/login.html"><button class="btn">Login</button></a>
-          </div>
+          <a href="/register.html"> <button class="regButton">Register</button></a>
+           <a href="/login.html"><button class="btn loginButton">Login</button></a>
+           <a><button class="logoutButton">Log Out</button></a>
+           <a href="/addaspa.html"><button class="addaspa-button"> Add a Spa</button></a>
+           </div>
       </nav>
-      <!-- <p class="error"></p> -->
+      <p class="loginError"></p>
     <section class="login-container">
         <form class="login">
         <h2>LOG~IN</h2>
-    <input type="email" placeholder="Email" class="input">
-    <input type="password" placeholder="Password" class="input">
-    <button>Enter</button>
+    <input type="email" placeholder="Email" name="email" class="input">
+    <input type="password" placeholder="Password" name="password" class="input">
+    <button class="enterButton">Enter</button>
         </form>
     </section>
     <footer>
@@ -47,6 +49,7 @@
         </div>
       </footer>
   </div>
-  <script src="/js/authentication.js"></script>
+  <script src="/js/luminary.js"></script>
+  <script src="/js/login.js"></script>
 </body>
 </html>

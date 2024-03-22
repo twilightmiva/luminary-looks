@@ -13,20 +13,23 @@
         <a href="/index.html"><img src="/images/1.png" width="120px" /></a>
 
         <div>
-         <a href="/register.html"> <button>Register</button></a>
-          <a href="/login.html"><button class="btn">Login</button></a>
+         <a href="/register.html"> <button class="regButton">Register</button></a>
+          <a href="/login.html"><button class="btn loginButton">Login</button></a>
+          <a><button class="logoutButton">Log Out</button></a>
+          <a href="/addaspa.html"><button class="addaspa-button"> Add a Spa</button></a>
           </div>
       </nav>
+      <p class="adderror"></p>
     <section class="addaspa-container">
         <form class="addaspa">
         <h2>Add a Spa</h2>
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Spa Details">
-    <input type="text" placeholder="Location">
-    <input type="text" placeholder="Services">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="spaDetails" placeholder="Spa Details">
+    <input type="text" name="location" placeholder="Location">
+    <input type="text" name="services" placeholder="Services">
     <label>Select a Spa file</label>
-    <input type="file" value="Add Spa Image">
-    <button>Add</button>
+    <input class="file" name="image" type="file" value="Add Spa Image">
+    <button class="addbtn">Add</button>
     </form>
     </section>
     <footer>
@@ -50,6 +53,7 @@
         </div>
       </footer>
   </div>
-  <script src="/js/"></script>
+  <script src="/js/luminary.js"></script>
+  <script src="/js/addaspa.js"></script>
 </body>
 </html>
